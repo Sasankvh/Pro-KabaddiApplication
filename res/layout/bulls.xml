@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/viewPager"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banguluru Bulls"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:onClick="hello1"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/ban"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gujarat Giants"
+            android:paddingRight="3dp"
+            android:onClick="hello"
+            android:paddingLeft="3dp"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/guj"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textteam"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#c00975"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </ListView>
+
+</LinearLayout>

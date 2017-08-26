@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.blogspot.drivetwist.www.kbid.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="1dp"
+            android:layout_height="1dp">
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:text="OPEN LEFT DRAWER"
+                android:id="@+id/button"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:text="OPEN RIGHT DRAWER"
+                android:id="@+id/button2"
+                android:layout_margin="15dp" />
+
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:text="OPEN ALL DRAWER"
+                android:id="@+id/button3"
+                android:layout_margin="15dp" />
+        </LinearLayout>
+
+
+        <fragment
+            android:id="@+id/fragmentscore"
+            android:name="android.webkit.WebViewFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ListView
+            android:id="@+id/list"
+
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+    </LinearLayout>
+</RelativeLayout>
